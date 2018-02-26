@@ -152,7 +152,7 @@ def csvupload():
 
     executequery5 = 'load data local infile \'C:/Users/aishw/Downloads/Cloud computing/Assignment3/data/Starbucks.csv \' into table Starbucks fields terminated by \',\' optionally enclosed by \'"\' lines terminated by \'\n\' ignore 1 lines;'
 
-    #cursor.execute(executequery2)
+    cursor.execute(executequery2)
     #cursor.execute(executequery3)
     cursor.execute(executequery4)
     #cursor.execute(executequery5)
@@ -168,7 +168,7 @@ def csvupload():
     for res in result:
         c = c + 1
         print (str(c) + ':' + str(res))
-        str1 += str(c) + ':' + str(res) + '<br>'
+        str1 += str(c) + ':' + str(res) + '<br><br>'
 
     db.commit()
     result=result #str(res)
