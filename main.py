@@ -168,7 +168,7 @@ def csvupload():
     for res in result:
         c = c + 1
         print (str(c) + ':' + str(res))
-        str1 += str(c) + ':' + str(res) + '<br><br>'
+        str1 += str(c) + ':' + str(res) + '<br>'
 
     db.commit()
     result=result #str(res)
